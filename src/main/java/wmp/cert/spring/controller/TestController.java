@@ -23,4 +23,10 @@ public class TestController {
         String memberinfo = member.getMember_name();
         return memberinfo;
     }
+
+    @GetMapping("/searchlist")
+    public List<MemberMapperDTO> getMemberList(String email){
+        List<MemberMapperDTO> memberlist = TestMapperRepository.getmemberlist(email);
+        return memberlist;
+    }
 }
