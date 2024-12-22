@@ -1,0 +1,20 @@
+cheatsheet:
+  xss:
+    - <iframe src="javascript:alert(1)"></iframe>
+    - <iframe src=javascript&colon;alert(2)>XSS</iframe>
+    - <iframe src="JaVaScript:alert(3)">XSS</iframe>
+    - <iframe src=" 	javascript:alert(4)">XSS</iframe>
+    - <iframe src="javas&Tab;cript:alert(5)">XSS</iframe>
+    - <iframe src="javas&NewLine;cript:alert(6)">XSS</iframe>
+    - <iframe src="eval(String.fromCharCode(106, 97, 118, 97, 115, 99, 114, 105, 112, 116, 58, 97, 108, 101, 114, 116, 40, 55, 41))"></iframe> #javascript:alert(7)
+    - <img src="x" onerror="alert(8)"></img>
+    - <img src="x" onerror="eval(String.fromCharCode(106, 97, 118, 97, 115, 99, 114, 105, 112, 116, 58, 97, 108, 101, 114, 116, 40, 57, 41))"></iframe> #javascript:alert(9)
+    - |
+      <div class="conts_image" data-contextmenu="disable">
+        <div class="wmp_prd_num">
+          상품번호 : <strong>2579448475</strong>
+        </div>
+
+          <p align="center"><img src="http://jjack333.cafe24.com/cj_none.jpg" class="fr-fic fr-dii"></p><p align="center"><img src="http://jjack333.cafe24.com/cj_none_2.jpg" class="fr-fic fr-dii"></p><p align="center"><img src="http://jjack333.cafe24.com/cj_none_3.jpg" class="fr-fic fr-dii"></p><p align="center"><img src="http://jjack333.cafe24.com/cj_nane.gif" class="fr-fic fr-dii"></p><p align="center"><img src="http://jjack333.cafe24.com/CJ_cheiljedang/cj_notice.jpg" class="fr-fic fr-dii"></p><!-- 상세페이지 넣기 --><p align="center"><img src="http://jjack333.cafe24.com/CJ_cheiljedang/renewal/202306_hatban_renewal.jpg" class="fr-fic fr-dii"></p><p align="center"><img src="https://img.cjthemarket.com/images/file/product/052/20230102135020303.jpg?SF=webp&amp;RS=860" class="fr-fic fr-dii"></p><p align="center"><img src="https://img.cjthemarket.com/images/file/product/191/20230102135026771.jpg?SF=webp&amp;RS=860" class="fr-fic fr-dii"></p><p align="center"><img src="https://img.cjthemarket.com/images/file/product/442/20230102135031965.jpg?SF=webp&amp;RS=860" class="fr-fic fr-dii"></p><p align="center"><img src="https://img.cjthemarket.com/images/file/product/411/20230102135039618.jpg?SF=webp&amp;RS=860" class="fr-fic fr-dii"></p><p align="center"><img src="https://img.cjthemarket.com/images/file/product/682/20230217133844801.jpg?SF=webp&amp;RS=860" class="fr-fic fr-dii"></p><p align="center"><img src="https://img.cjthemarket.com/images/file/product/966/20230217133850312.jpg?SF=webp&amp;RS=860" class="fr-fic fr-dii"></p><p align="center"><img src="https://img.cjthemarket.com/images/file/product/060/20230217133854729.jpg?SF=webp&amp;RS=860" class="fr-fic fr-dii"></p><p align="center"><img src="http://jjack333.cafe24.com/CJ_cheiljedang/caution/179570.jpg" class="fr-fic fr-dii"></p><p align="center"><img src="http://jjack333.cafe24.com/CJ_cheiljedang/caution/137345.jpg" class="fr-fic fr-dii"></p><p align="center"><img src="http://jjack333.cafe24.com/CJ_cheiljedang/cj_EXP_instant.jpg" alt="상온" class="fr-fic fr-dii"></p><p align="center"><img src="http://jjack333.cafe24.com/ESM/caution_cj.jpg" class="fr-fic fr-dii"></p>
+      </div>
+    - <iframe src="https://www.youtube.com/embed/Cyobc5_uPo4" frameborder="0" style="margin:50px 0 100px; width:100vw; min-width:200px; max-width:750px; height:calc(0.5625 * 100vw); min-height:calc(0.5625 * 200px); max-height:calc(0.5625 * 750px);"></iframe><br>

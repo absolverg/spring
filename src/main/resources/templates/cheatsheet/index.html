@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Xss CheatSheet</title>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    </head>
+    <body>
+        <table>
+			<tr>
+				<th>XSS</th>
+			</tr>
+			<tr th:each="clean: ${cleanList}">
+				<td th:utext="${clean}"></td>
+			</tr>
+		</table>
+    </body>    
+</html>
