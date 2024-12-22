@@ -3,6 +3,7 @@ package wmp.cert.spring.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+import java.util.List;
 
 import wmp.cert.spring.DTO.MemberMapperDTO;
 import wmp.cert.spring.Mapper.TestMapperRepository;
